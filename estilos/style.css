@@ -79,11 +79,7 @@
 
 .nosotros .nosotros-imagen img{
    width: 100%;
-}
-
-.nosotros .nosotros-info ul > li{
-    list-style-type: none;
-    text-align: left;
+   border-radius: 10px;
 }
 
 .nosotros .nosotros-info h3{
@@ -138,7 +134,7 @@
     display: flex;
     flex-direction: column;
     height: auto;
-    align-items: stretch;
+    align-items: stretch; 
 
     }   
          
@@ -146,22 +142,16 @@
     width: 100%;
     height: 200px;
     margin-bottom: 10px;
-    flex: 1;
-    order: 1;
-       }
+}
 
 .nuestra-trayectoria .trayectoria-texto p{
     padding: 10px;
-    flex: 1;
-    order: 2;
-    }
-.nuestra-trayectoria .trayectoria-imagenes2 img{
+}
+
+.nuestra-trayectoria .trayectoria-imagenes-2 img{
     width: 100%;
     height: 200px;
-    margin-bottom: 10px;
-    flex: 1;
-    order: 3;
-    background-color: blue;
+    margin-bottom: 10px;  
 }
 
 
@@ -236,7 +226,7 @@ input{
     }
 
     .nosotros .nosotros-imagen img{
-        height: 400px;
+        height: 500px;
     }
 
     .contenedor-fondo .contenedor-fondo-fondo .contactar-mapa{
@@ -256,8 +246,7 @@ input{
     height: 400px; 
     }
 }
-
-@media (min-width:1200px){
+@media(min-width:1200px){
     
     /*index*/
 
@@ -282,8 +271,8 @@ input{
     }
     
     .nosotros .nosotros-imagen img{
-        width: 650px;
-        height: 635px;
+        
+        height: 600px;
     }
     
     .nosotros .nosotros-info h3{
@@ -292,7 +281,7 @@ input{
     
     .nosotros .nosotros-info p{
         text-align: left;
-        font-size: 12px;
+        font-size: 14px;
     }
 
     /*FOOTER*/
@@ -385,7 +374,7 @@ input{
         grid-column: 1 / 3;
         grid-row: 1 / 3;
         display: flex;
-        max-width: 100%;
+        width: 100%;
         overflow: hidden;
         margin-top: 7px;
         justify-content: center;
@@ -407,20 +396,21 @@ input{
         animation-delay: 1s;
     }
 
-    .trayectoria-imagenes2{
+    .trayectoria-imagenes-2{
         background-color: red;
         padding: 10px;
         grid-column: 4 / 6;
         grid-row: 3 / 5;
-        max-width: 100%;
-       display: flex;
+        width:100%;
+        display: flex;
         justify-content: center;
         align-items: center;
         -webkit-animation:puff-in-center .7s cubic-bezier(.47,0.000,.745,.715) both;animation:puff-in-center .7s cubic-bezier(.47,0.000,.745,.715) both;
         animation-delay: 0.5s;
+        z-index: -1;
     }
 
-    @-webkit-keyframes puff-in-center{0%{-webkit-transform:scale(2);transform:scale(2);-webkit-filter:blur(4px);filter:blur(4px);opacity:0}100%{-webkit-transform:scale(1);transform:scale(1);-webkit-filter:blur(0);filter:blur(0);opacity:1}}@keyframes puff-in-center{0%{-webkit-transform:scale(2);transform:scale(2);-webkit-filter:blur(4px);filter:blur(4px);opacity:0}100%{-webkit-transform:scale(1);transform:scale(1);-webkit-filter:blur(0);filter:blur(0);opacity:1}}
+  
 
     /*TURNOS*/
 
@@ -444,5 +434,5 @@ input{
     .boton:hover{
         background-color: #244775;   
     }
-
 }
+
